@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="500.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Agenda.vista.PersonEditDialogControl">
+   <children>
+      <GridPane layoutX="14.0" layoutY="14.0" prefHeight="231.0" prefWidth="476.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="label-bright" text="Nombre:" />
+            <Label styleClass="label-bright" text="Apellido:" GridPane.rowIndex="1" />
+            <Label styleClass="label-bright" text="Empresa:" GridPane.rowIndex="2" />
+            <Label styleClass="label-bright" text="Direccion:" GridPane.rowIndex="3" />
+            <Label styleClass="label-bright" text="Ciudad:" GridPane.rowIndex="4" />
+            <Label styleClass="label-bright" text="E-mail:" GridPane.rowIndex="5" />
+            <Label styleClass="label-bright" text="Telefono:" GridPane.rowIndex="6" />
+            <TextField fx:id="NombreField" styleClass="text-field" GridPane.columnIndex="1" />
+            <TextField fx:id="ApellidoField" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="EmpresaField" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="DireccionField" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="CiudadField" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="EmailField" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="TelefonoField" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+      </GridPane>
+      <Button layoutX="415.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleCancel" text="Cancelar" />
+      <Button layoutX="339.0" layoutY="253.0" mnemonicParsing="false" onAction="#handleOk" text="Ok" />
+   </children>
+</AnchorPane>
